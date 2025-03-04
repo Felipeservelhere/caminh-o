@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Registro de Lançamentos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar Lançamento</h1>
+        <form action="/add" method="POST">
+            <input type="text" name="truck" placeholder="Caminhão" required>
+            <input type="text" name="driver" placeholder="Motorista" required>
+            <input type="text" name="load_date" placeholder="Data da Carga (DD/MM/AAAA)" required>
+            <input type="text" name="unload_date" placeholder="Data da Descarga (DD/MM/AAAA)" required>
+            <input type="text" name="load_location" placeholder="Local da Carga" required>
+            <input type="text" name="unload_location" placeholder="Local da Descarga" required>
+            <input type="number" name="expense" placeholder="Despesa" required>
+            <input type="number" name="revenue" placeholder="Receita" required>
+            <button type="submit">Registrar</button>
+        </form>
+
+        <h2>Lançamentos Registrados</h2>
+        <ul>
+            {% for launch in launches %}
+                <li>{{ launch.driver }} - {{ launch.truck }} - {{ launch.load_date }} a {{ launch.unload_date }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

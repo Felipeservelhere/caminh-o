@@ -1,0 +1,79 @@
+{
+    "trucks": [
+        "EHH-8E43",
+        "FTF-9C56"
+    ],
+    "drivers": [
+        "GORGE LEME",
+        "APARECIDO LEME"
+    ],
+    "loads": [
+        {
+            "truck": "EHH-8E43",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2028",
+            "unload_date": "15/05/2028",
+            "expense": 500.0,
+            "revenue": 600.0,
+            "profit": 100.0
+        },
+        {
+            "truck": "EHH-8E43",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2025",
+            "unload_date": "15/06/2025",
+            "expense": 500.0,
+            "revenue": 400.0,
+            "profit": -100.0
+        },
+        {
+            "truck": "FTF-9C56",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2025",
+            "unload_date": "15/06/2025",
+            "expense": 600.0,
+            "revenue": 1000.0,
+            "profit": 400.0
+        },
+        {
+            "truck": "EHH-8E43",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2025",
+            "unload_date": "15/06/2025",
+            "load_location": "Curitiba",
+            "unload_location": "Londrina",
+            "load_km": "45000",
+            "unload_km": "42000",
+            "expense": 2139.0,
+            "revenue": 3200.0,
+            "profit": 1061.0
+        },
+        {
+            "truck": "EHH-8E43",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2025",
+            "unload_date": "15/05/2023",
+            "expense": 450.0,
+            "revenue": 600.0,
+            "profit": 150.0
+        },
+        {
+            "truck": "EHH-8E43",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2019",
+            "unload_date": "15/02/2019",
+            "expense": 500.0,
+            "revenue": 200.0,
+            "profit": -300.0
+        },
+        {
+            "truck": "EHH-8E43",
+            "driver": "GORGE LEME",
+            "load_date": "15/05/2019",
+            "unload_date": "15/02/2019",
+            "expense": 500.0,
+            "revenue": 200.0,
+            "profit": -300.0
+        }
+    ]
+}
